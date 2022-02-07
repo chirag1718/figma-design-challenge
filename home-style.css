@@ -1,0 +1,290 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  /* page color */
+  --clr-pg: #ffffff;
+
+  /* button color */
+  --clr-btn: #1890ff;
+
+  /* gradient card 1 blue */
+  --clr-gradient-blue: #3282ed;
+  --clr-gradient-lightblue: #78ccf4;
+
+  /* gradient card 2 sea green */
+  --clr-gradient-seagreen: #21c6c6;
+  --clr-gradient-light-seagreen: #75dedb;
+
+  /* learning path card extended */
+  --clr-gradient-ext-blue: #3282ed;
+  --clr-gradient-ext-lightblue: #78ccf4;
+
+  /* week 1 card */
+  --clr-week: rgba(24, 144, 255, 0.13);
+
+  /* nav-bar fonts */
+  --ff-inter: "Inter", sans-serif;
+
+  /* font weight */
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+
+  /* box shadow */
+  --box-shadow: 0px 7px 5px -9px rgb(158 158 158);
+  --box-shadow-card: 0px 7px 5px -6px rgb(158 158 158);
+}
+
+/* -----General Properties----- */
+body {
+  background-color: var(--clr-pg);
+  /* padding: 0 2em; */
+  font-family: var(--ff-inter);
+}
+
+p {
+  font-size: 16px;
+}
+
+section {
+  padding: 0 1em;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.font-light{
+    font-weight: var(--fw-100);
+}
+
+/* -----Navigation----- */
+nav {
+  padding: 0 1em;
+  box-shadow: 0px 7px 5px -9px rgb(158 158 158);
+  font-size: 16px;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: var(--fw-300);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.list-items{
+  padding: 0 1em;
+}
+
+.list-items:hover{
+    text-decoration: underline;
+}
+
+#login {
+  border: 0.5px solid rgb(205 205 205);
+  border-radius: 2px;
+  padding: 0.3em 0.7em;
+}
+
+#sign-up {
+  border-radius: 2px;
+  padding: 0.3em 0.7em;
+  background-color: var(--clr-btn);
+  color: white;
+}
+
+/* Introductio Section */
+
+.hero-content {
+  display: flex;
+  height: 20em;
+}
+
+.hero-img {
+  width: 500px;
+  height: 248px;
+}
+
+/* Content bar */
+
+.content-bar-body {
+  margin-bottom: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 7px 5px -9px rgb(158 158 158);
+}
+.content-bar-body a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-bar-body img {
+  padding: 0 15px;
+}
+
+/* Learning path card section */
+
+.cards-content h1{
+    margin-bottom: 4em;
+}
+
+.cards-content{
+    margin-bottom: 6em;
+}
+
+.container-grid{
+    display: grid;
+    gap: 5em;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+    
+.card-1,
+.card-3{
+    background: linear-gradient(97.66deg, #2F80ED 0.94%, rgba(123, 174, 244, 0.635417) 73.96%, rgba(150, 191, 246, 0.504346) 83.82%, rgba(255, 255, 255, 0) 121.8%), #56CCF2;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: var(--box-shadow-card);
+}
+
+.card-2,
+.card-4{
+    background: linear-gradient(296.48deg, #87E8DE -14.41%, rgba(181, 241, 235, 0.613161) 25.24%, rgba(255, 255, 255, 0) 100%), #13C2C2;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: var(--box-shadow-card);
+}
+
+
+.grid-content-1,
+.grid-content-2{
+    display: flex;
+    gap: 3em;
+    margin: 0;
+}
+
+/* Social Media */
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-top: 2px solid rgba(158, 158, 158, 0.281);
+}
+
+.social-links{
+    padding: 0 2em;
+}
+
+/* Footer */
+footer{
+    border-top: 2px solid rgba(158, 158, 158, 0.281);
+    text-align: center;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXX END OF MAIN CONTENT XXXXXXXXXXXXXXXXXXXXX*/
+
+
+
+
+/* XXXXXXXXXXXXXXXXXXXXX STARTING OF MEDIA QUERIES XXXXXXXXXXXXXXXXXXXXX*/
+
+/* Media queries for responsive design */
+@media (min-width: 280px) and (max-width: 950px) {
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: center;
+  }
+  
+  section {
+    width: 100%;
+  }
+
+  /* Navigation bar */
+  .nav-bar {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-list {
+    font-size: 10px;
+    padding: 0;
+    margin: auto 0;
+  }
+
+  .list-items {
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  /* Introduction Section */
+  .hero-content {
+    display: block;
+    position: relative;
+    height: 500px;
+    margin: 0;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+/* Content bar body */
+  .content-bar-body {
+    flex-direction: column;
+  }
+  .content-bar-body a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  /* Learning path card section grid */
+  .container-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .card-1,
+  .card-3 {
+    background-image: linear-gradient(
+      to right, var(--clr-gradient-blue), var(--clr-gradient-lightblue));
+    padding: 1em 1em;
+    border-radius: 0.5em;
+  }
+
+  .card-2,
+  .card-4 {
+    background-image: linear-gradient(
+      to right, var(--clr-gradient-seagreen), var(--clr-gradient-light-seagreen));
+    padding: 1em 1em;
+    border-radius: 0.5em;
+  }
+
+  .grid-content-1,
+  .grid-content-2{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+/* END OF PAGE 1 */
