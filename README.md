@@ -2,4 +2,4 @@
 View this site here
 
 
-https://chirag1718.github.io/figma-design-challenge/
+https://pixeltocode.netlify.app
